@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>2022</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+    *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: aliceblue;
+}
+
+.hope{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: 'Lexend Exa', sans-serif;
+    text-align: center;
+}
+#jk{
+    font-size: 0.7rem;
+    opacity: 0.5;
+    color: crimson;
+    
+}
+.all{
+position: absolute;
+top: 20%;
+width: 100%;
+background-color:;
+magin: 0% 10% 0% 20%;
+transform: translateX(30px)scale(0.6);
+background-color: ;
+
+}
+.first, .third, .fourth{
+    display: inline-block;
+    margin-left: 25px;
+    transform: scale(0.8);
+    
+}
+
+.first{
+    
+}
+.second{
+    position: relative;
+    height: 220px;
+    width: 100px;
+    display: inline-block;
+    margin-bottom: 20px;
+    background-color: aliceblue;
+    border: 35px solid crimson;
+      transform: scale(0.8);
+  
+}
+
+.block{
+    display: block;
+    height: 80px;
+    width: 17px;
+    background-color: crimson;
+    border: 10px solid crimson;
+    outline: 5px solid crimson;
+}
+/* STYLE FOR TWOS 
+f = first
+b = block 
+1 = number 
+fo = forth
+
+*/
+
+#b1{
+    transform: rotate(90deg);
+
+}
+
+
+#b5{
+    margin-top: -50px;
+    transform: rotate(90deg);
+}
+
+#tb5{
+    margin-top: -30px;
+    transform: rotate(90deg);
+     animation: tb5  1.8s ease-in-out  infinite alternate;
+}
+@keyframes tb5 {
+    from {
+     
+          transform:translate(0px, 10px) rotate(90deg) ;
+    }
+    to {
+   
+          
+           transform:translate(-30px, -140px) rotate(180deg);
+    }
+}
+
+
+
+
+
+
+
+#fb1{
+    transform: rotate(90deg);
+    animation: b1  ease-in-out 1.8s infinite alternate;
+    
+}
+@keyframes b1 {
+    from {
+     
+          transform:translate(0px, 0px) rotate(90deg) ;
+    }
+    to {
+   
+          
+           transform:translate(-30px, 50px) rotate(180deg);
+    }
+}
+#b2{
+    margin-top: -30px;
+    margin-left: 30px;
+}
+#b3{
+    margin-top: -30px;
+    transform: rotate(90deg);
+}
+#b4{
+    margin-top: -40px;
+    margin-left: -30px;
+}
+#fb5{
+    margin-top: -30px;
+    transform: rotate(90deg);
+    animation: fb5  ease-in-out 1.8s infinite alternate;
+}
+@keyframes fb5 {
+    from {
+        transform:rotate(90deg) ;
+    }
+    to {
+    transform:translate(30px, -40px) rotate(0deg);
+
+    }
+}
+
+
+#fob2{
+    margin-top: -30px;
+    margin-left: 30px;
+    animation: fo2 ease-in-out  1.8s infinite alternate;
+}
+
+@keyframes fo2 {
+    from {
+        transform:rotate(0deg) ;
+    }
+    to {
+    transform:translate(-60px, 0px) rotate(0deg);
+
+    }
+}
+
+
+
+
+
+/* THIS IF FOR ANIMATINBS */
+
+
+
+
+</style>
+    </head>
+    <body>
+        <div class="all">
+            <!-- THIS IF FOR FIRST LETTER -->
+        <div class="first">
+            <div class="block" id="fb1"></div>
+            <div class="block" id="b2"></div>
+            <div class="block" id="b3"></div>
+            <div class="block" id="b4"></div>
+            <div class="block" id="fb5"></div>
+        </div>
+
+
+
+        <div class="second">
+   
+            
+        </div>
+
+        <div class="third">
+            <div class="block" id="b1"></div>
+            <div class="block" id="b2"></div>
+            <div class="block" id="b3"></div>
+            <div class="block" id="b4"></div>
+            <div class="block" id="tb5"></div>
+        </div>
+
+        <div class="fourth">
+            <div class="block" id="b1"></div>
+            <div class="block" id="fob2"></div>
+            <div class="block" id="b3"></div>
+            <div class="block" id="b4"></div>
+            <div class="block" id="b5"></div>
+        </div>
+        </div>
+        <div class="hope">Hope in 2022</div>
+    </body>
+</html>
