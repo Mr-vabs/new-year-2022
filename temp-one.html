@@ -1,0 +1,202 @@
+<!doctype html>
+<html>
+<head>
+<title>new year</title>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+      
+html { 
+ background: #031321;
+ text-align: center; 
+ font-size: 10px;
+ font-family:Courier;
+  } 
+body { 
+ margin: 0; 
+ font-size: 2rem;
+ display:flex; 
+ flex: 1; 
+ min-height: 100vh; 
+ align-items: center; 
+  }  
+.container{ 
+color:white;
+ margin: 50px auto; 
+ position: relative;
+ padding: 5px;
+ letter-spacing:5px;
+ width:90vw;
+ height:auto;
+} 
+.text{
+
+    top:50%;
+    left:10%;
+    }
+#one{
+    font-size:0.5rem;    
+} 
+#two{
+    font-size:5rem;
+}
+.fireworks{    
+    position: absolute ;
+    width:60px;
+    height:60px;
+    border-radius:100%;
+    }
+  .sticks::before,.sticks::after
+  
+{
+    content: '';
+    position: absolute;
+    width:4px;
+    height:100%;
+    top:0%;
+    left:48.5%;
+    border-radius:30%;
+    background: purple;
+    overflow:hidden ;  
+}
+.sticks::after{
+    transform: rotate(90deg);
+
+}
+.ok::before{
+    transform: rotate(140deg);
+    background: skyblue;
+    
+    }
+.ok::after{
+    transform: rotate(40deg);
+background: skyblue;
+
+}
+
+.circle{
+    position: absolute;
+  top: 35%;
+  left: 38%;
+  width: 25%;
+  height: 25%;
+  background: #031321;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  z-index: 1;
+    }
+   
+    @keyframes explosion {
+    
+    0% {
+       
+        opacity:0;
+    }
+    
+   
+       
+    50%{
+        opacity:0.5;
+    }
+       
+    100% {
+   
+       opacity:1;
+       }
+}
+#first{
+    top:10vh;
+    left:10vw;
+    transform:scale(0.4);  
+    animation:explosion 2.2s ease-in-out infinite ;
+    
+}
+#second{    
+    top:10vh;
+    left:70vw;
+    transform:scale(0.5);        
+    animation:explosion 3s ease-in-out infinite ;    
+}
+#third{    
+    top:5vh;
+    left:-5vw;
+    transform:scale(0.3);
+    animation:explosion 2s ease-in-out infinite ;
+}
+#fourth{
+    top:1vh;
+    left:30vw;  
+    transform:scale(0.2);  
+    animation:explosion 3.5s ease-in-out infinite ;
+    
+}
+#fifth{    
+    top:-10vh;
+    left:5vw;
+    transform:scale(0.4);        
+    animation:explosion 2.5s ease-in-out infinite ;    
+}
+#sixth{    
+    top:-10vh;
+    left:30vw;
+    transform:scale(0.3);
+    animation:explosion 1.5s ease-in-out infinite ;
+}
+ #seventh{
+    top:-12vh;
+    left:60vw;
+    transform:scale(0.4);  
+    animation:explosion 1.8s ease-in-out infinite ;
+    
+}  
+
+  </style>
+</head>
+<body>
+   <div class="container">
+   <div class="text">
+     <div id="one">HAPPY</div>
+     <div id="two">NEW YEAR</div>  
+   </div>
+   <div class="fireworks" id="first">
+       <div class="sticks"></div>       
+       <div class="sticks ok"></div>       
+       <div class="circle"></div>
+   </div>
+   
+   <div class="fireworks" id="second">
+       <div class="sticks"></div>       
+       <div class="sticks ok"></div>       
+       <div class="circle"></div>  
+   </div>
+   <div class="fireworks" id="third">
+       <div class="sticks"></div>       
+       <div class="sticks ok"></div>       
+       <div class="circle"></div>  
+   </div>
+        <div class="fireworks" id="fourth">
+       <div class="sticks"></div>       
+       <div class="sticks ok"></div>       
+       <div class="circle"></div>
+   </div>
+   
+   <div class="fireworks" id="fifth">
+       <div class="sticks"></div>       
+       <div class="sticks ok"></div>       
+       <div class="circle"></div>  
+   </div>
+   <div class="fireworks" id="sixth">
+       <div class="sticks"></div>       
+       <div class="sticks ok"></div>       
+       <div class="circle"></div>  
+   </div>
+   <div class="fireworks" id="seventh">
+       <div class="sticks"></div>       
+       <div class="sticks ok"></div>       
+       <div class="circle"></div>  
+   </div>
+  
+  </div>   
+</body>
+</html>
