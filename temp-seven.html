@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>New year 2022</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap" rel="stylesheet"> 
+<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        *{
+    padding:0;
+    margin:0;
+    box-sizing:border-box ;
+}
+body {
+    background:red;
+    font-family: 'Mea Culpa', cursive;
+    width:100%;
+    height:100%;
+    overflow:hidden ;
+    position:absolute ;
+    backdrop-filter:blur(5px) saturate(200%);
+    background:url("https://www.dropbox.com/s/hfmxmllav1ohbf1/1640806811070.gif?dl=1");
+    background-position:;
+    //background-size:cover;
+    background-repeat:no-repeat ;
+}
+.wishes{
+    width:100%;
+    height:100vh;
+    position:absolute ;
+    
+}
+.wish{
+    background:linear-gradient(red,yellow 60%);
+    background:url("https://source.unsplash.com/random/200x100");
+    background-position:center ;
+    background-size:cover;
+    font-size:130px;
+    font-weight:bold;
+    text-align:center ;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent ;
+    filter:drop-shadow(3px 5px 0px black);
+}
+.happy{
+    background:linear-gradient(red,yellow 60%);
+    background:url("https://source.unsplash.com/random/300x150");
+    background-position:center ;
+    background-size:cover;
+    font-size:130px;
+    font-weight:bold;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent ;
+    filter:drop-shadow(3px 5px 0px black);
+    text-align:left;
+    margin-left:20px;
+}
+.new{
+    background:linear-gradient(red,yellow 60%);
+    background:url("https://source.unsplash.com/random/150x150");
+    background-position:center ;
+    background-size:cover;
+    font-size:130px;
+    font-weight:bold;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent ;
+    text-align:center ;
+    filter:drop-shadow(3px 5px 0px black);
+}
+.year{
+    background:linear-gradient(red,yellow 60%);
+    background:url("https://source.unsplash.com/random/400x200");
+    background-position:center ;
+    background-size:cover;
+    font-size:130px;
+    font-weight:bold;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent ;
+    filter:drop-shadow(3px 5px 0px black);
+    margin-left:40px;
+}
+.two{
+    background:linear-gradient(red,yellow 60%);
+    background:url("https://source.unsplash.com/random/350x250");
+    background-position:center ;
+    background-size:cover;
+    font-size:130px;
+    text-align:right;
+    font-weight:bold;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent ;
+    filter:drop-shadow(3px 5px 0px black);
+    margin-right:30px;
+    line-height:100px;
+    font-family:'Rouge Script', cursive;
+}
+.commming{
+    height:100%;
+    width:100%;
+    display:flex;
+    align-items:center ;
+    justify-content:center ;
+    font-size:100px;
+    font-weight:bold;
+    position:relative ;
+    z-index:11;
+    background:black;
+    color:white;
+}
+.soon{
+    position:absolute ;
+}
+#somya {
+  width: 40px;
+  height: 40px;
+  background-color: cyan;
+  position:absolute  ;
+  transform:translate(-50%, -50%) rotate(45deg);
+  animation:move 1s linear,
+  clr 3s linear;
+ 
+}
+#somya::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: cyan;
+  position: absolute;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  transform-style:preserve-3d;
+}
+#somya::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color:cyan;
+  position: absolute;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  transform-style:preserve-3d;
+}
+@keyframes move{
+    0%,100% {
+      box-shadow: 0  0 0 0 yellow;
+      height:0px;
+        width:0px;
+  }
+  90% {
+     box-shadow: 0 0 30px 200px rgba(0,0,0, 0);
+      height:60px;
+        width:60px;
+        opacity:0;
+  }
+  100% {
+      box-shadow: 0 0 0 0 rgba(0,0,0, 0);
+      height:60px;
+        width:60px;
+        opacity:0;
+  }
+}
+@keyframes clr{
+    0%{
+        filter:hue-rotate(0deg);
+        
+    }
+    100%{
+        filter:hue-rotate(1200deg);
+        
+    }
+}
+#btn{
+    position:absolute  ;
+    bottom:200px;
+    width:100px;
+    height:30px;
+    display:none;
+    align-items:center ;
+    justify-content:center ;
+    font-size:17px;
+    border-radius:100q;
+    outline:none;
+    border:none;
+    font-weight:bolder;
+    background:white;
+    color:black;
+}
+
+
+
+
+
+    </style>
+    </head>
+    <body>
+        <div class="wishes">
+            <p class="wish">Wish&nbsp; U</p>
+            <p class="happy">Happy</p>
+            <p class="new">New</p>
+            <p class="year">Year</p>
+            <p class="two">2022</p>
+        </div>
+        <div class="commming" id="main">
+            <p class="come animate__animated animate__hinge animate__delay-2s">Now....</p>
+            <p class="soon animate__animated animate__fadeInDown animate__delay-4s">...Celebrate...</p>
+            <button id="btn">Let's go</button>
+            
+        </div>
+    </body>
+    <script>
+    setTimeout(()=>{
+        go()
+    },5500)
+        function go(){
+            let u = document.getElementById("btn")
+            u.style.display = "flex"
+        }
+   var heart = function(){
+    var s = document.createElement('div');
+    s.setAttribute('id','somya'),
+    document.body.appendChild(s),
+    s.style.top = event.pageY + 'px',
+    s.style.left = event.pageX + 'px',
+    setTimeout(function(){
+        document.body.removeChild(s)
+    },1000)
+};
+document.addEventListener('click',heart);
+ let s = new Audio("https://dl.dropbox.com/s/pbqsjzaye4ssf8o/fully-faltu-mika-singh.mp3")
+    $(document).ready(function(){
+           $('#btn').click(function(){
+             $('#main').fadeOut(1000);
+               s.play()
+             })
+           });
+    </script>
+</html>
+    
+    
