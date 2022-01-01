@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <title>HappyNewYear 2022</title>
+      
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Pushster&display=swap" rel="stylesheet">  
+   <style>
+body {
+    width: 100%;
+    text-align:center;
+    background-color: #234;
+    color: #fff;
+    font-size: 4.3em;
+    margin: 60px 0px;
+    font-family: 'Pushster', cursive;
+    font-weight: bold;
+    text-shadow: 3px 3px 3px black;
+}
+
+span {
+    color: yellow;
+    animation: HNY 3s 3;
+}
+
+@keyframes HNY {
+    25%{color: violet;
+        font-size: 1.3em;}
+    50%{color: lightgreen;}
+    75%{color: red;} 
+}
+</style>
+
+<script>
+
+var text = "5, 4, 3, 2, 1, <span>Happy<br/> New Year</span><br/>2022<br/>🎊🎉";
+
+var time = "1000, 2000, 3000, 4000, 5000, 6000";            
+
+time = time.split(",").map(v => parseInt(v));  
+  
+text.split(",").forEach((v,i) => {
+  setTimeout(() => {
+    let a = document.getElementById("root");
+    a.innerHTML = v;
+    document.body.appendChild(a);
+  }, time[i]); 
+});
+
+</script>
+
+  </head>
+ 
+  <body>
+     <div id="root"></div>
+  </body>
+
+</html>
